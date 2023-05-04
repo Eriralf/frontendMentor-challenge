@@ -96,7 +96,12 @@ body {
   width: 42px;
   height: 30px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.selected, .selected:hover {
+  background-color: var(--orange) !important;
+  color: var(--white);
 }
 
 .rating-container ul li:hover {
@@ -130,5 +135,5 @@ body {
   background-color: var(--primary-color);
   padding: 8px 15px;
   border-radius: 20px;
-
 }
+
