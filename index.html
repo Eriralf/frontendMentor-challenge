@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
   <title>Interactive Rating</title>
+  
 </head>
 <body>
   <div class="container">
-    <div class="first-container" >
-      <div class="star-container">
+    <div class="first-container" id="first-container">
+      <div class="star-container" id="star">
         <img src="assets/icon-star.svg" alt="star-rating">
       </div>
       <div class="middle-container">
@@ -20,7 +21,7 @@
       </div>
       <div class="rating-container">
         <ul>
-          <li class="rating selected">1</li>
+          <li class="rating">1</li>
           <li class="rating">2</li>
           <li class="rating">3</li>
           <li class="rating">4</li>
@@ -28,15 +29,15 @@
         </ul>
       </div>
       <div class="submit-container">
-        <button class="submit">SUBMIT</button>
+        <button class="submit" id="submitbtn" disabled>SUBMIT</button>
       </div>
     </div>
-    <div class="second-container" style="display: none;">
+    <div class="second-container switch" id="second-container">
       <div>
         <img src="assets/illustration-thank-you.svg" alt="">
       </div>
       <div class="selected-container">
-        <p>You selected <span>1</span> out of 5</p>
+        <p>You selected <span class="star-count">5</span> out of 5</p>
       </div>
       <div class="middle-container">
         <h1>Thank you!</h1>
@@ -44,5 +45,6 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

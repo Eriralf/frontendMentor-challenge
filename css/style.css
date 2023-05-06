@@ -55,6 +55,11 @@ body {
   height: 80%;
 }
 
+.switch {
+  display: none;
+}
+
+
 .star-container {
   display: grid;
   place-items: center;
@@ -123,7 +128,13 @@ body {
   letter-spacing: 3px;
 }
 
-.submit-container button:hover {
+.submit-container button:disabled{
+  cursor: not-allowed;
+  background-color: #fb741340;
+  color: var(--secondary-font);
+}
+
+.submit-container button:active {
   background-color: var(--white);
   color: var(--orange);
 }
